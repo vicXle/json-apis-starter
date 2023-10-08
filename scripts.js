@@ -28,15 +28,15 @@ function getWord(word){
     resetDisplay();
 
     // create ajax object
-    const xhr = new XMLHttpRequest();
+    // TO DO
 
     // set withCredentials property on ajax object to true (we will access with a key)
-    xhr.withCredentials = true;
+    // TO DO
 
     // ready state change event listener
-    xhr.addEventListener("readystatechange", function () {
+    // TO DO
         // when we get a response...
-        if (this.readyState === this.DONE) {
+        // TO DO
             // log the returned text to the console
             // TO DO	
 
@@ -44,16 +44,16 @@ function getWord(word){
             // TO DO
 
             // check to see if an error was returned from the call
-            if(wordInfo.hasOwnProperty("query") || wordInfo.success === false){
+            // TO DO
                 // display an error message to the user
-                userWord.innerHTML = `<strong>${word}</strong> is not a valid word`;
+                // TO DO
 
                 // clear the list to allow for an error message to be displayed
-                resetDisplay();
+                // TO DO
 
                 // ask the user to enter a valid word
-                display.innerHTML = "<li>Please enter a new word and try again</li>";
-            }else{
+                // display.innerHTML = "<li>Please enter a new word and try again</li>";
+            // TO DO
                 // this means we got our data back and can display it from the JSON
                 // display the word entered on the page
                 // TO DO
@@ -74,20 +74,20 @@ function getWord(word){
     });
 
     // start of endpoint to API
-    const PATH = "https://wordsapiv1.p.rapidapi.com/words/";
+    // TO DO
 
     // full path of endpoint to get a definition
-    let URL = `${PATH}${word}`;
+    // TO DO
 
     // open the connection with the ajax object
-    xhr.open("GET", URL);
+    // TO DO
 
     // set the required headers on the object
-    xhr.setRequestHeader("x-rapidapi-key", "TO DO"); // TO DO - ADD YOUR API KEY HERE
-    xhr.setRequestHeader("x-rapidapi-host", "wordsapiv1.p.rapidapi.com");
+    // xhr.setRequestHeader("x-rapidapi-key", "TO DO"); // TO DO - ADD YOUR API KEY HERE
+    // TO DO
 
     // send the request to the API
-    xhr.send();
+    // TO DO
 }
 
 // this helper function clears out the input and output for the user word
