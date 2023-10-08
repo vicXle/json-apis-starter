@@ -1,0 +1,214 @@
+/*
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* --------------------------------------------------- */
+/* CUSTOM STYLES */
+/* --------------------------------------------------- */
+:root{
+    /* Color theme from Adobe Color */
+    --purple: #5C4B51;
+    --teal: #8CBEB2;
+    --cream: #F2EBBF;
+    --orange: #F3B562;
+    --coral: #F06060;
+
+    --dk-gray: #222;
+    --white: #fff;
+    --lt-gray: #ccc;
+
+    --fonts: Verdana, Arial, sans-serif;
+
+    --box-shadow-sm: -3px 3px 5px var(--lt-gray);
+    --box-shadow-lg: -6px 6px 10px var(--lt-gray);
+}
+
+body{
+    background-color: var(--teal);
+    color: var(--dk-gray);
+    font-family: var(--fonts);
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+header, main, footer{
+    width: calc(100% - 64px);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: var(--white);
+}
+
+header{
+    border-bottom: 6px solid var(--coral);
+}
+
+footer{
+    border-top: 6px solid var(--coral);
+}
+
+/* for content only necessary for screen readers and the outline */
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 8px 0;
+    color: var(--purple);
+}
+
+h1{
+    font-size: 2.25rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+a{
+    color: var(--purple);
+}
+
+a:hover{
+    color: var(--coral);
+}
+
+p{
+    padding: 16px 0;
+    max-width: 55ch;
+    margin: 0 auto;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.invalid{
+    color: var(--orange);
+}
+
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 32px auto;
+    font-size: 1.1rem;
+}
+
+input, label, button{
+    display: block;
+    color: var(--dk-gray);
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input{
+    padding: 8px 4px;
+    margin: 0 auto;
+    width: calc(100% - 12px);
+}
+
+input:focus, input:focus-visible, button:focus, button:focus-visible, a:focus, a:focus-visible{
+    outline: 4px solid var(--coral);
+    outline-offset: 2px;
+    border-color: var(--white);
+}
+
+button{
+    padding: 12px;
+    border: none;
+    font-size: 1.1rem;
+    margin: 20px auto;
+    background-color: var(--teal);
+    box-shadow: var(--box-shadow-lg);
+    font-family: var(--fonts);
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: var(--coral);
+    box-shadow: var(--box-shadow-sm);
+}
+
+#userWord{
+    margin-top: 1em;
+}
+
+ul{
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p{
+    padding: 4px 0;
+}

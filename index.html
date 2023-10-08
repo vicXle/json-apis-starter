@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Accessing JSON Data for Display</title>
+        <meta name="author" content="Prof. Barnett">
+        <meta name="description" content="Practice accessing information stored in JSON objects">
+
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- SCRIPTS -->
+        <script src="scripts.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Accessing JSON Data for Display</h1>
+            <p>Today I have written a call to an API that uses Ajax (covered later in this module). The API will return JSON data from that GET request, and we will need to access the properties that represent information we want to add to our page. Understanding how to use your object data to populate content on a webpage is an important part of JavaScript development!</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Search for a Definition</h2>
+                <p>The form below will call to the <a href="https://rapidapi.com/dpventures/api/wordsapi/" target="_blank">Words API</a> from the <a href="https://rapidapi.com/hub" target="_blank">Rapid API Hub</a>. If the word is not found, a message indicating that information should display, otherwise a list of the returned definitions should display.</p>
+                <form>
+                    <label for="my-word">Please enter a word to see its definition: </label>
+                    <input type="text" name="my-word" id="my-word">
+    
+                    <button id="get-defs">Find Definition</button>
+                </form>
+            </section>
+
+            <section id="output" class="hidden">
+                <h2>Output from our JSON Data</h2>
+                <p id="user-word">You entered: <span></span></p>
+                <ul id="display-word-info"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; <span>2023</span> - Prof. Barnett/GIT418</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
